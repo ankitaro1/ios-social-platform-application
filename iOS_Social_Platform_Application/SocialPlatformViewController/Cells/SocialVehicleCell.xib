@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="SocialVehicleCell" customModule="iOS_Social_Platform_Application" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iCY-A9-T2z">
+                        <rect key="frame" x="15" y="0.0" width="290" height="120"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ke-9f-Fn7">
+                                <rect key="frame" x="75" y="17" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKV-fT-vtp">
+                                <rect key="frame" x="75" y="53" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wXr-sM-TSg">
+                                <rect key="frame" x="5" y="6.5" width="50" height="107.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="68C-Zk-9IO"/>
+                                    <constraint firstAttribute="width" constant="50" id="FAT-wj-NWg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCU-Cv-9yP">
+                                <rect key="frame" x="75" y="94" width="205" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wXr-sM-TSg" firstAttribute="top" secondItem="iCY-A9-T2z" secondAttribute="top" constant="5" id="C13-cT-PMA"/>
+                            <constraint firstAttribute="trailing" secondItem="1Ke-9f-Fn7" secondAttribute="trailing" constant="10" id="Dsj-jY-YE4"/>
+                            <constraint firstItem="wXr-sM-TSg" firstAttribute="leading" secondItem="iCY-A9-T2z" secondAttribute="leading" constant="5" id="GMd-Y1-nB8"/>
+                            <constraint firstItem="hCU-Cv-9yP" firstAttribute="top" secondItem="fKV-fT-vtp" secondAttribute="bottom" constant="20" id="JmB-KP-hha"/>
+                            <constraint firstItem="1Ke-9f-Fn7" firstAttribute="leading" secondItem="wXr-sM-TSg" secondAttribute="trailing" constant="20" id="Kci-2c-RoX"/>
+                            <constraint firstItem="fKV-fT-vtp" firstAttribute="leading" secondItem="1Ke-9f-Fn7" secondAttribute="leading" id="NIT-D8-PqP"/>
+                            <constraint firstItem="fKV-fT-vtp" firstAttribute="top" secondItem="1Ke-9f-Fn7" secondAttribute="bottom" constant="15" id="Tar-b7-4ZR"/>
+                            <constraint firstAttribute="trailing" secondItem="hCU-Cv-9yP" secondAttribute="trailing" constant="10" id="Yya-HN-4qr"/>
+                            <constraint firstAttribute="bottom" secondItem="wXr-sM-TSg" secondAttribute="bottom" constant="5" id="byz-mT-YHa"/>
+                            <constraint firstItem="hCU-Cv-9yP" firstAttribute="leading" secondItem="fKV-fT-vtp" secondAttribute="leading" id="iuz-Qh-DNP"/>
+                            <constraint firstItem="1Ke-9f-Fn7" firstAttribute="top" secondItem="wXr-sM-TSg" secondAttribute="top" constant="12" id="lVm-ra-UTw"/>
+                            <constraint firstAttribute="trailing" secondItem="fKV-fT-vtp" secondAttribute="trailing" constant="10" id="vqB-An-MqX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="iCY-A9-T2z" secondAttribute="trailing" constant="15" id="OLe-ay-LUR"/>
+                    <constraint firstAttribute="bottom" secondItem="iCY-A9-T2z" secondAttribute="bottom" constant="15" id="OOG-Hi-tne"/>
+                    <constraint firstItem="iCY-A9-T2z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="eLZ-jZ-PWh"/>
+                    <constraint firstItem="iCY-A9-T2z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="q9I-9q-3KE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="container" destination="iCY-A9-T2z" id="gAW-8f-V41"/>
+                <outlet property="nameLabel" destination="1Ke-9f-Fn7" id="Tad-yW-l58"/>
+                <outlet property="numberLabel" destination="fKV-fT-vtp" id="GVP-3o-3Od"/>
+                <outlet property="typeLabel" destination="hCU-Cv-9yP" id="KAm-Xb-xzC"/>
+                <outlet property="vehicleImageView" destination="wXr-sM-TSg" id="tkm-Hz-iIg"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="176.45089285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="car" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
